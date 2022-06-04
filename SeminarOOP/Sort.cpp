@@ -75,6 +75,7 @@ void Sort::inputFile()
 		ifstream fileInput(link, ios::in);
 		if (fileInput.fail())
 		{
+			PlaySound(TEXT("try.wav"), NULL, SND_FILENAME | SND_ASYNC);
 			wcout << L"File is not exist!" << endl;
 		}
 		kt = fileInput.fail();
